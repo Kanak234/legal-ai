@@ -7,7 +7,7 @@ sys.path.insert(0, str(ROOT_DIR / "backend"))
 sys.path.insert(0, str(ROOT_DIR / "ai_service"))
 sys.path.insert(0, str(ROOT_DIR))
 
-from run_local import app
+from run_local import app, seed_database
 from fastapi.testclient import TestClient
 from app.core.embeddings import embedding_engine
 from app.core.rag_chain import rag_chain
@@ -15,6 +15,7 @@ from app.core.rag_chain import rag_chain
 class TestLegalAIPlatform(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        seed_database()
         cls.client = TestClient(app)
 
     def test_health_check(self):
