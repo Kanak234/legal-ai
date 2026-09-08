@@ -1,0 +1,212 @@
+[
+  {
+    "act_id": "bns_2023",
+    "act_name": "Bharatiya Nyaya Sanhita, 2023",
+    "short_name": "BNS",
+    "category": "Criminal Law",
+    "enactment_year": 2023,
+    "sections": [
+      {
+        "section_number": "103(1)",
+        "title": "Punishment for Murder",
+        "content": "Whoever commits murder shall be punished with death or imprisonment for life, and shall also be liable to fine.",
+        "explanation": "Replaces Section 302 of the Indian Penal Code (IPC). Defines capital punishment or life imprisonment for intentional killing.",
+        "ipc_corresponding": "IPC Section 302",
+        "cognizable": true,
+        "bailable": false,
+        "compoundable": false,
+        "keywords": ["murder", "homicide", "death penalty", "life imprisonment", "intentional killing"]
+      },
+      {
+        "section_number": "111",
+        "title": "Organised Crime",
+        "content": "Any continuing unlawful activity, including kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, economic offences, cyber-crimes having severe consequences, committed by a syndicate or member of a syndicate.",
+        "explanation": "Newly introduced section in BNS specifically penalizing organized crime, syndicates, and gang operations with severe penalties up to life imprisonment or death.",
+        "ipc_corresponding": "No direct equivalent in IPC (New Special Offence)",
+        "cognizable": true,
+        "bailable": false,
+        "compoundable": false,
+        "keywords": ["organized crime", "syndicate", "extortion", "gangsters", "cyber crime", "contract killing"]
+      },
+      {
+        "section_number": "69",
+        "title": "Sexual Intercourse by Deceitful Means",
+        "content": "Whoever, by deceitful means or making by promise to marry to a woman without any intention of fulfilling the same, and has sexual intercourse with her, such sexual intercourse not amounting to the offence of rape, shall be punished with imprisonment up to ten years.",
+        "explanation": "Introduced in BNS 2023 to address deceitful promises of marriage or false identity used for sexual exploitation.",
+        "ipc_corresponding": "No direct equivalent in IPC (Covered under general cheating/fraud)",
+        "cognizable": true,
+        "bailable": false,
+        "compoundable": false,
+        "keywords": ["deceitful promise", "false promise of marriage", "sexual exploitation", "fraudulent identity"]
+      },
+      {
+        "section_number": "316",
+        "title": "Criminal Breach of Trust",
+        "content": "Whoever, being in any manner entrusted with property, or with any dominion over property, dishonestly misappropriates or converts to his own use that property shall be punished with imprisonment up to five years, or with fine, or both.",
+        "explanation": "Replaces Section 405/406 of IPC 1860 with enhanced penalty structure for corporate and financial breach of trust.",
+        "ipc_corresponding": "IPC Section 405 / 406",
+        "cognizable": true,
+        "bailable": true,
+        "compoundable": false,
+        "keywords": ["breach of trust", "misappropriation", "fiduciary duty", "financial fraud", "property conversion"]
+      },
+      {
+        "section_number": "356",
+        "title": "Defamation",
+        "content": "Whoever, by words either spoken or intended to be read, or by signs or by visible representations, makes or publishes any imputation concerning any person intending to harm the reputation of such person is guilty of defamation. Community service added as alternative punishment.",
+        "explanation": "Replaces Section 499/500 of IPC. Introduces community service as a progressive penal measure alongside imprisonment.",
+        "ipc_corresponding": "IPC Section 499 / 500",
+        "cognizable": false,
+        "bailable": true,
+        "compoundable": true,
+        "keywords": ["defamation", "reputation", "libel", "slander", "community service"]
+      }
+    ]
+  },
+  {
+    "act_id": "bnss_2023",
+    "act_name": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+    "short_name": "BNSS",
+    "category": "Criminal Procedure",
+    "enactment_year": 2023,
+    "sections": [
+      {
+        "section_number": "35",
+        "title": "Arrest by Police Officer",
+        "content": "Any police officer may without an order from a Magistrate and without a warrant, arrest any person who commits in the presence of a police officer a cognizable offence. Prior approval of officer of rank of DSP required for offences punishable with less than 3 years for elderly/infirm.",
+        "explanation": "Replaces Section 41 of CrPC. Adds procedural safeguards for arrests involving offences punishable by less than 3-7 years.",
+        "ipc_corresponding": "CrPC Section 41",
+        "cognizable": true,
+        "bailable": false,
+        "compoundable": false,
+        "keywords": ["arrest without warrant", "cognizable offence", "police powers", "custodial safeguards"]
+      },
+      {
+        "section_number": "173",
+        "title": "Information in Cognizable Cases & Zero FIR",
+        "content": "Every information relating to the commission of a cognizable offence, irrespective of the area where the offence was committed, may be given orally or by electronic communication (Zero FIR). Preliminary inquiry allowed within 14 days for offences punishable between 3 to 7 years.",
+        "explanation": "Replaces Section 154 of CrPC. Mandates Zero FIR nationwide registration and electronic FIR submission.",
+        "ipc_corresponding": "CrPC Section 154",
+        "cognizable": true,
+        "bailable": false,
+        "compoundable": false,
+        "keywords": ["FIR", "Zero FIR", "e-FIR", "cognizable offence", "preliminary inquiry", "electronic report"]
+      },
+      {
+        "section_number": "187",
+        "title": "Custody and Remand Procedure",
+        "content": "Magistrate may authorize detention of accused in police custody for up to 15 days in whole or in parts during the initial 40 or 60 days of the total detention period of 60 or 90 days.",
+        "explanation": "Replaces Section 167 of CrPC. Modifies police remand dynamics to allow flexible 15-day custody windows.",
+        "ipc_corresponding": "CrPC Section 167",
+        "cognizable": true,
+        "bailable": false,
+        "compoundable": false,
+        "keywords": ["remand", "police custody", "judicial custody", "detention period", "charge sheet timeline"]
+      },
+      {
+        "section_number": "480",
+        "title": "Bail in Non-Bailable Offences",
+        "content": "When any person accused of or suspected of the commission of any non-bailable offence is arrested or detained without warrant, he may be released on bail by Court subject to conditions, especially first-time offenders who have served one-third of maximum sentence.",
+        "explanation": "Replaces Section 437 of CrPC. Introduces mandatory bail provisions for first-time undertrial prisoners who completed 1/3rd sentence.",
+        "ipc_corresponding": "CrPC Section 437 / 436A",
+        "cognizable": true,
+        "bailable": true,
+        "compoundable": false,
+        "keywords": ["bail", "non-bailable offence", "undertrial prisoner", "first-time offender", "personal bond"]
+      }
+    ]
+  },
+  {
+    "act_id": "bsa_2023",
+    "act_name": "Bharatiya Sakshya Adhiniyam, 2023",
+    "short_name": "BSA",
+    "category": "Evidence Law",
+    "enactment_year": 2023,
+    "sections": [
+      {
+        "section_number": "61",
+        "title": "Admissibility of Electronic and Digital Records",
+        "content": "Electronic or digital record shall be admissible as evidence without further proof or production of the original, provided it is accompanied by a certificate declaring authenticity signed by responsible officer.",
+        "explanation": "Replaces Section 65B of Indian Evidence Act 1872. Expands electronic evidence definition to cover cloud records, server logs, encrypted messages, and digital signatures.",
+        "ipc_corresponding": "Indian Evidence Act Section 65B",
+        "cognizable": true,
+        "bailable": true,
+        "compoundable": true,
+        "keywords": ["electronic evidence", "digital record", "65B certificate", "server log", "authenticity", "cyber evidence"]
+      },
+      {
+        "section_number": "24",
+        "title": "Confession to Police Officer Not to Be Proved",
+        "content": "No confession made to a police officer shall be proved as against a person accused of any offence, except as provided in Section 23.",
+        "explanation": "Replaces Section 25 of Evidence Act. Maintains custodial confession bar to safeguard against coerced statements.",
+        "ipc_corresponding": "Indian Evidence Act Section 25",
+        "cognizable": true,
+        "bailable": false,
+        "compoundable": false,
+        "keywords": ["confession", "police custody", "coercion", "admissibility", "statement to police"]
+      }
+    ]
+  },
+  {
+    "act_id": "constitution_india",
+    "act_name": "Constitution of India",
+    "short_name": "COI",
+    "category": "Constitutional Law",
+    "enactment_year": 1950,
+    "sections": [
+      {
+        "section_number": "Article 14",
+        "title": "Equality Before Law",
+        "content": "The State shall not deny to any person equality before the law or the equal protection of the laws within the territory of India.",
+        "explanation": "Fundamental Right guaranteeing non-arbitrariness, reasonable classification, and rule of law across all state actions.",
+        "ipc_corresponding": "Constitutional Fundamental Right",
+        "cognizable": true,
+        "bailable": true,
+        "compoundable": true,
+        "keywords": ["equality", "rule of law", "non-arbitrariness", "article 14", "equal protection"]
+      },
+      {
+        "section_number": "Article 21",
+        "title": "Protection of Life and Personal Liberty",
+        "content": "No person shall be deprived of his life or personal liberty except according to procedure established by law.",
+        "explanation": "Cornerstone of Indian constitutional jurisprudence. Interpreted by Supreme Court to include right to privacy, speedy trial, legal aid, clean environment, and dignity.",
+        "ipc_corresponding": "Constitutional Fundamental Right",
+        "cognizable": true,
+        "bailable": true,
+        "compoundable": true,
+        "keywords": ["life and liberty", "article 21", "privacy", "due process", "speedy trial", "human dignity"]
+      },
+      {
+        "section_number": "Article 32",
+        "title": "Remedies for Enforcement of Rights (Writ Jurisdiction)",
+        "content": "The right to move the Supreme Court by appropriate proceedings for the enforcement of the rights conferred by Part III is guaranteed. Supreme Court has power to issue Habeas Corpus, Mandamus, Prohibition, Quo Warranto, and Certiorari.",
+        "explanation": "Heart and soul of the Constitution (Dr. B.R. Ambedkar). Direct recourse to the Supreme Court for violation of fundamental rights.",
+        "ipc_corresponding": "Constitutional Writ Jurisdiction",
+        "cognizable": true,
+        "bailable": true,
+        "compoundable": true,
+        "keywords": ["article 32", "writ petition", "habeas corpus", "mandamus", "supreme court", "fundamental rights"]
+      }
+    ]
+  },
+  {
+    "act_id": "it_act_2000",
+    "act_name": "Information Technology Act, 2000",
+    "short_name": "IT Act",
+    "category": "Cyber Law",
+    "enactment_year": 2000,
+    "sections": [
+      {
+        "section_number": "66D",
+        "title": "Punishment for Cheating by Personation by Using Computer Resource",
+        "content": "Whoever, by means of any communication device or computer resource cheats by personating, shall be punished with imprisonment up to three years and fine up to one lakh rupees.",
+        "explanation": "Penalizes phishing, online impersonation, fake profiles, and financial cyber frauds executed via digital devices.",
+        "ipc_corresponding": "IPC Section 419 / BNS Section 319",
+        "cognizable": true,
+        "bailable": true,
+        "compoundable": false,
+        "keywords": ["cyber fraud", "phishing", "impersonation", "computer crime", "online scam"]
+      }
+    ]
+  }
+]

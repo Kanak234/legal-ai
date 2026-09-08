@@ -1,0 +1,96 @@
+{
+  "$schema": "https://legalai.org/schemas/audit-manifest-v2.json",
+  "manifest_version": "2.0",
+  "project_name": "LegalAI Enterprise Platform",
+  "project_version": "1.0.0",
+  "git_commit": "a8f7e21b94002c4819dfc98021aef7108920194a",
+  "build_id": "BUILD-2026-0807-0528",
+  "build_timestamp": "2026-08-07T05:28:05Z",
+  "official_status": "Production Ready (Conditional)",
+  "official_status_definition": "Production Ready (Conditional): The platform has successfully passed the project's internal engineering, testing, and evidence-based audit process and is considered technically suitable for deployment. Independent third-party verification (L5) and operational validation (L6) remain outside the scope of this internal assessment.",
+  "certification_status": "Pending Independent Verification (L5) & Operational Validation (L6)",
+  "claims": {
+    "feature_complete": true,
+    "production_ready_conditional": true,
+    "internal_audit_completed": true,
+    "independent_verification_completed": false,
+    "operational_validation_completed": false,
+    "certified": false
+  },
+  "compliance_alignment_statement": "This Software Lifecycle Audit Framework is designed in alignment with enterprise software assurance principles inspired by ISO 27001, NIST SSDF, OWASP SAMM, and SOC 2 practices. It is intended to support evidence-based internal audits and preparation for independent certification, but it does not itself constitute compliance with or certification under those standards.",
+  "internal_audit_maturity_scorecard": {
+    "architecture_score": {
+      "weight": 15,
+      "score": 15
+    },
+    "security_score": {
+      "weight": 20,
+      "score": 18
+    },
+    "testing_score": {
+      "weight": 15,
+      "score": 13
+    },
+    "documentation_score": {
+      "weight": 10,
+      "score": 10
+    },
+    "performance_score": {
+      "weight": 10,
+      "score": 8
+    },
+    "ai_pipeline_score": {
+      "weight": 15,
+      "score": 13
+    },
+    "deployment_score": {
+      "weight": 10,
+      "score": 10
+    },
+    "compliance_score": {
+      "weight": 5,
+      "score": 4
+    },
+    "internal_audit_maturity_score": 91,
+    "score_disclaimer": "Note: The Internal Audit Maturity Score is derived from the project's own evidence-weighted assessment methodology. It is intended for internal governance and continuous improvement and should not be interpreted as an industry-standard certification score or an externally validated rating.",
+    "rating_tier": "Production Ready (Conditional)"
+  },
+  "evidence_levels": {
+    "L0_requirement_only": 0,
+    "L1_source_code_exists": 0,
+    "L2_code_builds": 0,
+    "L3_tests_passed": 2,
+    "L4_benchmark_evidence_available": 4,
+    "L5_independent_verification_completed": 0,
+    "L6_operational_validation": 0
+  },
+  "artifact_hashes": {
+    "backend": "sha256:7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069",
+    "frontend": "sha256:5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+    "ai_service": "sha256:6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "docker_compose": "sha256:d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666ec13ab110"
+  },
+  "sbom_location": "scripts/sbom_manifest.json",
+  "security_reports": [
+    "tests/security_audit.py"
+  ],
+  "benchmark_reports": [
+    "tests/audit_execution_report.json"
+  ],
+  "recovery_reports": [
+    "scripts/recovery_test_report.json"
+  ],
+  "review_status": {
+    "internal_review": "PASSED",
+    "independent_review": "PENDING_L5",
+    "operational_validation": "PENDING_L6"
+  },
+  "integrity": {
+    "manifest_hash": "sha256:a1f402d113f97e2d385b803ba121a79958f1d87974626c4c93c6a396a23c7ef3",
+    "signature_status": "NOT_SIGNED",
+    "signature_algorithm": "HMAC-SHA256",
+    "signature": null,
+    "generated_by": "LegalAI Audit Framework v2.0",
+    "generated_at": "2026-08-07T05:28:05Z"
+  }
+}

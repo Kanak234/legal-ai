@@ -1,0 +1,34 @@
+[
+  {
+    "old_act": "Indian Penal Code (IPC), 1860",
+    "new_act": "Bharatiya Nyaya Sanhita (BNS), 2023",
+    "mappings": [
+      { "ipc": "Section 302", "bns": "Section 103(1)", "subject": "Punishment for Murder", "key_change": "Punishment penalty structure preserved; section number changed to 103(1)." },
+      { "ipc": "Section 304", "bns": "Section 105", "subject": "Culpable Homicide Not Amounting to Murder", "key_change": "Enhanced clarity on degree of intent and punishment parameters." },
+      { "ipc": "Section 376", "bns": "Section 64", "subject": "Punishment for Rape", "key_change": "Minimum sentence increased to 10 years; gender-neutral victim language in specific sub-clauses." },
+      { "ipc": "Section 420", "bns": "Section 318(4)", "subject": "Cheating and Dishonestly Inducing Delivery of Property", "key_change": "Higher monetary fine options and expanded scope for electronic cheating." },
+      { "ipc": "Section 498A", "bns": "Section 85 / 86", "subject": "Husband or Relative of Husband Subjecting Woman to Cruelty", "key_change": "Section reorganized under Chapter V (Offences Against Woman & Child)." },
+      { "ipc": "Section 499 / 500", "bns": "Section 356", "subject": "Defamation", "key_change": "Introduced Community Service as alternative punishment." },
+      { "ipc": "Section 124A (Sedition)", "bns": "Section 152", "subject": "Acts Endangering Sovereignty, Unity and Integrity of India", "key_change": "Sedition term removed; specific focus on secessionist activity, armed rebellion, and sovereignty threats." }
+    ]
+  },
+  {
+    "old_act": "Code of Criminal Procedure (CrPC), 1973",
+    "new_act": "Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023",
+    "mappings": [
+      { "crpc": "Section 41", "bnss": "Section 35", "subject": "Arrest by Police without Warrant", "key_change": "DSP rank permission needed before arresting infirm/elderly for minor offences." },
+      { "crpc": "Section 154", "bnss": "Section 173", "subject": "Information in Cognizable Cases (FIR)", "key_change": "Mandated Zero FIR and e-FIR registration across all police stations." },
+      { "crpc": "Section 167", "bnss": "Section 187", "subject": "Remand & Police Custody", "key_change": "Police custody of 15 days can be sought in split spells across 40/60 days." },
+      { "crpc": "Section 437 / 436A", "bnss": "Section 480", "subject": "Bail in Non-Bailable Offences & First Time Undertrials", "key_change": "Mandatory release on bail for first-time offenders completing 1/3rd max sentence." }
+    ]
+  },
+  {
+    "old_act": "Indian Evidence Act, 1872",
+    "new_act": "Bharatiya Sakshya Adhiniyam (BSA), 2023",
+    "mappings": [
+      { "iea": "Section 65B", "bsa": "Section 61", "subject": "Admissibility of Electronic Records", "key_change": "Expanded definition to include cloud storage, smartphone logs, and digital messages." },
+      { "iea": "Section 25", "bsa": "Section 24", "subject": "Confession to Police Officer", "key_change": "Custodial confession bar preserved to protect constitutional rights." },
+      { "iea": "Section 101", "bsa": "Section 104", "subject": "Burden of Proof", "key_change": "Harmonized evidentiary rules across modern electronic and physical trials." }
+    ]
+  }
+]

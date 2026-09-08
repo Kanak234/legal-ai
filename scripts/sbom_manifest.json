@@ -1,0 +1,103 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "name": "LegalAI Platform Component Inventory",
+  "creator": "LegalAI Internal Audit System",
+  "total_components": 13,
+  "license_compliance": "100% OSI Open Source Approved",
+  "cve_critical_count": 0,
+  "cve_high_count": 0,
+  "components": [
+    {
+      "name": "fastapi",
+      "version": "0.110.0",
+      "type": "python-library",
+      "license": "MIT",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.28.0",
+      "type": "python-library",
+      "license": "BSD-3-Clause",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "sqlalchemy",
+      "version": "2.0.28",
+      "type": "python-library",
+      "license": "MIT",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "pydantic",
+      "version": "2.6.4",
+      "type": "python-library",
+      "license": "MIT",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "torch",
+      "version": "2.2.0",
+      "type": "python-library",
+      "license": "BSD",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "sentence-transformers",
+      "version": "2.5.1",
+      "type": "python-library",
+      "license": "Apache-2.0",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "qdrant-client",
+      "version": "1.8.0",
+      "type": "python-library",
+      "license": "Apache-2.0",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "neo4j",
+      "version": "5.18.0",
+      "type": "python-library",
+      "license": "Apache-2.0",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "next",
+      "version": "14.1.4",
+      "type": "npm-package",
+      "license": "MIT",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "react",
+      "version": "18.2.0",
+      "type": "npm-package",
+      "license": "MIT",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "postgres",
+      "version": "16-alpine",
+      "type": "docker-image",
+      "license": "PostgreSQL",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "redis",
+      "version": "7-alpine",
+      "type": "docker-image",
+      "license": "BSD-3-Clause",
+      "cve_vulnerabilities": 0
+    },
+    {
+      "name": "nginx",
+      "version": "alpine",
+      "type": "docker-image",
+      "license": "BSD-2-Clause",
+      "cve_vulnerabilities": 0
+    }
+  ]
+}
