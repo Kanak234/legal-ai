@@ -12,8 +12,8 @@ Docs: http://localhost:8000/docs
 import sys, os
 # Add venv packages to path
 VENV_PACKAGES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "venv_packages")
-if os.path.isdir(VENV_PACKAGES):
-    sys.path.insert(0, VENV_PACKAGES)
+if os.path.isdir(VENV_PACKAGES) and VENV_PACKAGES not in sys.path:
+    sys.path.append(VENV_PACKAGES)
 
 import json, math, re, time, uuid, base64, hashlib, datetime
 from typing import Any, Dict, List, Optional
