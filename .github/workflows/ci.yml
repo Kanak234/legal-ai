@@ -24,7 +24,7 @@ jobs:
     - name: Install test runner dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install fastapi httpx uvicorn sqlalchemy pydantic pytest
+        pip install fastapi httpx uvicorn sqlalchemy pydantic pytest numpy passlib bcrypt
 
     - name: Python syntax check
       run: |
