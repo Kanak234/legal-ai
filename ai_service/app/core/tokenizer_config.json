@@ -1,0 +1,23 @@
+{
+  "vocab_size": 16,
+  "target_vocab_size": 32000,
+  "model_type": "BPE_Legal_Custom",
+  "vocab": {
+    "<pad>": 0,
+    "<unk>": 1,
+    "<s>": 2,
+    "</s>": 3,
+    "BNS": 4,
+    "BNSS": 5,
+    "BSA": 6,
+    "IPC": 7,
+    "CrPC": 8,
+    "Section": 9,
+    "Article": 10,
+    "Court": 11,
+    "Murder": 12,
+    "Bail": 13,
+    "Zero_FIR": 14,
+    "Electronic_Evidence": 15
+  }
+}

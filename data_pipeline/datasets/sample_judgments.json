@@ -1,0 +1,47 @@
+[
+  {
+    "case_id": "sc_2023_001",
+    "case_title": "State of Maharashtra vs. Rajeev Sharma & Ors.",
+    "citation": "2023 INSC 845",
+    "court": "Supreme Court of India",
+    "bench": "Bench of Hon'ble Mr. Justice D.Y. Chandrachud, Hon'ble Mr. Justice B.R. Gavai",
+    "year": 2023,
+    "judges": ["D.Y. Chandrachud", "B.R. Gavai"],
+    "act_references": ["Bharatiya Nyaya Sanhita (BNS) Section 103", "IPC Section 302", "BNSS Section 173"],
+    "summary": "The Supreme Court examined the transition between IPC 302 and BNS 103, establishing that procedural protections under BNSS Section 173 (Zero FIR) apply retrospectively to ongoing investigative protocols where electronic evidence integrity under BSA Section 61 is satisfied.",
+    "ratio_decidendi": "Electronic records produced under Section 61 of BSA 2023 carry primary evidentiary status provided authentication certificates meet statutory requirements.",
+    "outcome": "Appeal Allowed in Part",
+    "disposition": "Police custody order modified; direction issued for digital evidence preservation.",
+    "keywords": ["BNS 103", "Zero FIR", "Electronic Evidence", "BSA Section 61", "Retrospective procedural application"]
+  },
+  {
+    "case_id": "sc_2024_012",
+    "case_title": "Priya Ananthakrishnan vs. Union of India",
+    "citation": "2024 INSC 102",
+    "court": "Supreme Court of India",
+    "bench": "Bench of Hon'ble Mrs. Justice B.V. Nagarathna, Hon'ble Mr. Justice Sanjay Karol",
+    "year": 2024,
+    "judges": ["B.V. Nagarathna", "Sanjay Karol"],
+    "act_references": ["Constitution of India Article 21", "Article 14", "BNS Section 69"],
+    "summary": "Landmark ruling clarifying the constitutionality and scope of Section 69 of BNS 2023 regarding deceitful promise of marriage, underscoring the distinction between fraudulent inception of relationship versus genuine breach of intent.",
+    "ratio_decidendi": "For an offence under Section 69 BNS to be sustained, the prosecution must establish fraudulent intent right at the inception of the relationship.",
+    "outcome": "Quashed Proceedings against Appellant",
+    "disposition": "FIR quashed under Article 226 / 32 principles.",
+    "keywords": ["Article 21", "BNS Section 69", "Deceitful promise of marriage", "Inception of fraud", "Criminal liability"]
+  },
+  {
+    "case_id": "hc_del_2023_405",
+    "case_title": "TechSolutions Pvt Ltd vs. Commissioner of Income Tax & Anr.",
+    "citation": "2023 DHC 5921",
+    "court": "Delhi High Court",
+    "bench": "Bench of Hon'ble Mr. Justice Rajiv Shakdher, Hon'ble Ms. Justice Tara Vitasta Ganju",
+    "year": 2023,
+    "judges": ["Rajiv Shakdher", "Tara Vitasta Ganju"],
+    "act_references": ["Information Technology Act Section 66D", "Companies Act 2013 Section 135"],
+    "summary": "High Court examined cyber security corporate liability and digital transaction disclosures for IT entities operating multi-tier payment gateways.",
+    "ratio_decidendi": "Corporate entities maintaining user data must adhere strictly to CERT-In cybersecurity directives and ISO standards.",
+    "outcome": "Petition Disposed of with Directions",
+    "disposition": "Compliance window granted to petitioner company.",
+    "keywords": ["Cyber law", "IT Act 66D", "Corporate liability", "Data privacy", "CERT-In"]
+  }
+]
