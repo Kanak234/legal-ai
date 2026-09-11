@@ -24,7 +24,7 @@ def generate_audit_evidence():
     print("=" * 70)
     print(" LEGAL AI PLATFORM - AUDIT-QUALITY EMPIRICAL BENCHMARK & TEST SUITE")
     print("=" * 70)
-    
+
     start_time = time.time()
 
     # 1. Ingestion Audit
@@ -54,7 +54,7 @@ def generate_audit_evidence():
         t_start = time.time()
         res = rag_chain.process_query(tc["query"], tc["persona"])
         dur = round((time.time() - t_start) * 1000, 2)
-        
+
         has_match = tc["expected_keyword"] in res["answer"]
         rank_score = 1.0 if has_match else 0.5
         mrr_accum += rank_score

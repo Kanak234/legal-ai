@@ -12,3 +12,12 @@ dist/
 build/
 .env
 *.log
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+test_*.db
+legalai*.db

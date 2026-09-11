@@ -3,7 +3,6 @@ Hallucination & Faithfulness Evaluation Engine
 Measures ROUGE-L, NLI Contradiction Rate, and Precision@K across N=100 Legal Test Pairs.
 """
 
-import json
 import logging
 from typing import List, Dict, Any
 
@@ -23,7 +22,7 @@ class NLIEvaluator:
         # Substring NLI matching simulation
         ground_truth_text = " ".join(source_passages).lower()
         answer_tokens = generated_answer.lower().split()
-        
+
         matches = sum(1 for t in answer_tokens if t in ground_truth_text)
         faithfulness = round(matches / max(len(answer_tokens), 1), 3)
         contradiction = faithfulness < 0.35
@@ -36,7 +35,7 @@ class NLIEvaluator:
 
     def run_benchmark_suite(self) -> Dict[str, Any]:
         logger.info(f"Running Faithfulness & Hallucination Benchmark over N={self.sample_size} sample pairs...")
-        
+
         # Benchmark results over N=100 legal query-answer pairs
         return {
             "total_samples_evaluated": self.sample_size,

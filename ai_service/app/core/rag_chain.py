@@ -17,10 +17,10 @@ class RAGChainEngine:
 
     def process_query(self, query: str, persona: str, act_filter: str = None) -> dict:
         q_lower = query.lower()
-        
+
         reasoning_steps = [
             f"Verified 100% Offline Policy & Air-Gapped Local Inference ({self.local_provider}).",
-            f"Formulated local dense vector query + sparse BM25 index matching.",
+            "Formulated local dense vector query + sparse BM25 index matching.",
             "Traversed local Neo4j Knowledge Graph for citation cross-links.",
             "Cross-Encoder reranked top statutory passages locally on device.",
             "Applied offline anti-hallucination verification matrix (Confidence score = 96.8%)."

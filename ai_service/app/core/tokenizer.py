@@ -7,7 +7,7 @@ import json
 import logging
 import re
 from pathlib import Path
-from typing import List, Dict, Any
+from typing import List, Dict
 
 logger = logging.getLogger("LegalAI-Tokenizer")
 
@@ -24,7 +24,7 @@ class LegalTokenizer:
             with open(TOKENIZER_CONFIG_PATH, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 return data.get("vocab", {})
-        
+
         # Build initial legal vocabulary
         base_tokens = ["<pad>", "<unk>", "<s>", "</s>", "BNS", "BNSS", "BSA", "IPC", "CrPC", "Section", "Article", "Court", "Murder", "Bail", "Zero_FIR", "Electronic_Evidence"]
         vocab = {token: idx for idx, token in enumerate(base_tokens)}

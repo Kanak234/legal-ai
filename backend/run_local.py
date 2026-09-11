@@ -9,23 +9,26 @@ API:  http://localhost:8000
 Docs: http://localhost:8000/docs
 """
 
-import sys, os
+import sys
+import os
 # Add venv packages to path
 VENV_PACKAGES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "venv_packages")
 if os.path.isdir(VENV_PACKAGES) and VENV_PACKAGES not in sys.path:
     sys.path.append(VENV_PACKAGES)
 
-import json, math, re, time, uuid, base64, hashlib, datetime
-from typing import Any, Dict, List, Optional
+import time
+import uuid
+import datetime
+from typing import Dict, List, Optional
 from pathlib import Path
 
 import uvicorn
-from fastapi import FastAPI, HTTPException, Query, UploadFile, File
+from fastapi import FastAPI, Query, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 import sqlalchemy as sa
-from sqlalchemy import create_engine, text, Column, String, Integer, Float, Boolean, Text, DateTime, JSON
-from sqlalchemy.orm import declarative_base, sessionmaker, Session
+from sqlalchemy import create_engine, text, Column, String, Integer, Float, Boolean, Text
+from sqlalchemy.orm import declarative_base, sessionmaker
 from contextlib import contextmanager
 
 # ══════════════════════════════════════════════════════════════════════
@@ -1114,12 +1117,12 @@ J.B. Pardiwala, J.:
 
 1. Leave granted.
 
-2. The appellant has been convicted for offences under Section 302 of 
-   the Indian Penal Code, 1860 (now Section 103 of Bharatiya Nyaya 
-   Sanhita, 2023) by the Sessions Court and conviction affirmed by 
+2. The appellant has been convicted for offences under Section 302 of
+   the Indian Penal Code, 1860 (now Section 103 of Bharatiya Nyaya
+   Sanhita, 2023) by the Sessions Court and conviction affirmed by
    the High Court of Bombay.
 
-3. The principal question: whether prosecution has proved beyond 
+3. The principal question: whether prosecution has proved beyond
    reasonable doubt that the death was homicidal.
 
 [... PAGE 2 ...]
@@ -1239,9 +1242,9 @@ async def startup():
     print("="*60)
     seed_database()
     print(f"  Database: {DB_PATH}")
-    print(f"  API Docs: http://localhost:8000/docs")
-    print(f"  Frontend: http://localhost:3000")
-    print(f"  Mode: FULLY OFFLINE — Zero Cloud APIs")
+    print("  API Docs: http://localhost:8000/docs")
+    print("  Frontend: http://localhost:3000")
+    print("  Mode: FULLY OFFLINE — Zero Cloud APIs")
     print("="*60 + "\n")
 
 if __name__ == "__main__":

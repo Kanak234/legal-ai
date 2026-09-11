@@ -4,11 +4,8 @@ Handles tokenizer training, dataset deduplication, supervised fine-tuning (SFT),
 model quantization (GGUF/ONNX), evaluation benchmarks, and version rollback.
 """
 
-import json
 import logging
-import os
 import hashlib
-from pathlib import Path
 from typing import Dict, List, Any
 
 logger = logging.getLogger("LegalAI-TrainingPipeline")
@@ -55,7 +52,7 @@ class AutonomousTrainingPipeline:
     def trigger_local_finetune(self, dataset_name: str, epochs: int = 3, learning_rate: float = 2e-5) -> Dict[str, Any]:
         self.training_status = "IN_PROGRESS"
         logger.info(f"Initiating SFT Local Fine-Tuning for '{dataset_name}' over {epochs} epochs...")
-        
+
         # Simulate local training evaluation metrics
         new_version = f"LegalAI-Foundation-v1.{len(self.version_history)}"
         self.version_history.insert(0, {

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.db.session import get_db
 from app.models.legal import LegalDraft
@@ -98,9 +98,9 @@ APPLICANT SIGNATURE
 @router.post("/generate", response_model=DraftResponse)
 async def generate_legal_draft(draft_in: DraftRequest, db: AsyncSession = Depends(get_db)):
     template = TEMPLATES.get(draft_in.draft_type, TEMPLATES["Bail Petition"])
-    
+
     sections_str = ", ".join(draft_in.sections_invoked) if draft_in.sections_invoked else "Section 103, 316 BNS 2023"
-    
+
     rendered_content = template.format(
         petitioner_name=draft_in.petitioner_name,
         respondent_name=draft_in.respondent_name,
@@ -108,7 +108,7 @@ async def generate_legal_draft(draft_in: DraftRequest, db: AsyncSession = Depend
         court_name=draft_in.court_name or "High Court of Judicature",
         sections_list=sections_str
     )
-    
+
     # Save draft to database
     draft_record = LegalDraft(
         title=f"{draft_in.draft_type} - {draft_in.petitioner_name}",
@@ -118,7 +118,7 @@ async def generate_legal_draft(draft_in: DraftRequest, db: AsyncSession = Depend
     )
     db.add(draft_record)
     await db.commit()
-    
+
     return DraftResponse(
         title=f"{draft_in.draft_type} Draft",
         draft_type=draft_in.draft_type,

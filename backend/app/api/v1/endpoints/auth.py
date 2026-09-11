@@ -14,7 +14,7 @@ async def register_user(user_in: UserCreate, db: AsyncSession = Depends(get_db))
     res = await db.execute(stmt)
     if res.scalars().first():
         raise HTTPException(status_code=400, detail="User with this email already exists")
-    
+
     user = User(
         email=user_in.email,
         full_name=user_in.full_name,
@@ -34,7 +34,7 @@ async def login(credentials: UserLogin, db: AsyncSession = Depends(get_db)):
     user = res.scalars().first()
     if not user or not verify_password(credentials.password, user.hashed_password):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid email or password")
-    
+
     access_token = create_access_token(subject=user.email, role=user.role)
     return Token(
         access_token=access_token,

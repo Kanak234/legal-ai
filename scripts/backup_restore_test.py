@@ -5,8 +5,6 @@ Simulates PostgreSQL database backup/restore, Qdrant vector snapshot export, and
 """
 
 import json
-import time
-import sys
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent.parent

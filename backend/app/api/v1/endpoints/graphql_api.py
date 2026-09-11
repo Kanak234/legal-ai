@@ -3,9 +3,9 @@ GraphQL Query Endpoint for LegalAI Platform
 Enables GraphQL queries across Statutes, Sections, Judgments, and Knowledge Graph Node Relationships.
 """
 
-from fastapi import APIRouter, Request
+from fastapi import APIRouter
 from pydantic import BaseModel
-from typing import Optional, List, Dict, Any
+from typing import Optional, Dict, Any
 
 router = APIRouter()
 

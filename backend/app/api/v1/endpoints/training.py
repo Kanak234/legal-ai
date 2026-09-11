@@ -1,6 +1,5 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from typing import Optional, List, Dict, Any
 from ai_service.app.core.training_pipeline import training_pipeline
 
 router = APIRouter()

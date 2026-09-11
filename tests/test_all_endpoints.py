@@ -13,7 +13,7 @@ def check_endpoint(name, url, method="GET", data=None):
     headers = {"Content-Type": "application/json"}
     body = json.dumps(data).encode("utf-8") if data else None
     req = urllib.request.Request(url, data=body, headers=headers, method=method)
-    
+
     try:
         with urllib.request.urlopen(req, timeout=5) as response:
             status = response.status

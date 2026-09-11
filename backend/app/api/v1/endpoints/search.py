@@ -19,7 +19,7 @@ async def hybrid_search(
     db: AsyncSession = Depends(get_db)
 ):
     query_term = f"%{q}%"
-    
+
     # 1. Search Sections
     sec_stmt = select(Section).where(
         or_(
