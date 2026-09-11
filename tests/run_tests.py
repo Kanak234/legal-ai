@@ -3,20 +3,23 @@ import unittest
 import sys
 from pathlib import Path
 
-# Add backend and ai_service to path
+import asyncio
+
+# Add root and backend to path
 root = Path(__file__).parent.parent
-sys.path.insert(0, str(root / "backend"))
-sys.path.insert(0, str(root / "ai_service"))
 sys.path.insert(0, str(root))
+sys.path.insert(0, str(root / "backend"))
 
 from fastapi.testclient import TestClient
 from app.main import app
-from app.core.embeddings import embedding_engine
-from app.core.rag_chain import rag_chain
+from app.db.seed import init_db
+from ai_service.app.core.embeddings import embedding_engine
+from ai_service.app.core.rag_chain import rag_chain
 
 class TestBackendAPI(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
+        asyncio.run(init_db())
         cls.client = TestClient(app)
 
     def test_01_health(self):

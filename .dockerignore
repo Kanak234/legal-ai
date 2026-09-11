@@ -1,0 +1,16 @@
+.git
+.github
+frontend
+node_modules
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.coverage
+htmlcov
+*.egg-info
+.venv
+venv
+test_*.db
+*.log

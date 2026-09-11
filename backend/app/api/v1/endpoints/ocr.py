@@ -1,7 +1,5 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException
-import httpx
 import logging
-from app.core.config import settings
 
 logger = logging.getLogger("LegalAI-OCR")
 router = APIRouter()

@@ -5,7 +5,6 @@ Scans Python, Node.js, and Docker components to generate SPDX/CycloneDX JSON SBO
 """
 
 import json
-import sys
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent.parent
@@ -45,7 +44,7 @@ def generate_sbom():
 
     output_path = ROOT_DIR / "scripts" / "sbom_manifest.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    
+
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(sbom_report, f, indent=2)
 

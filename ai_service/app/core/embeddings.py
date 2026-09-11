@@ -20,7 +20,7 @@ class EmbeddingEngine:
         if self.model_loaded and self.model:
             vec = self.model.encode(text)
             return vec.tolist()
-        
+
         # Fallback deterministic 384-dim normalized hashing vector
         rng = np.random.RandomState(abs(hash(text)) % (2**32))
         vec = rng.randn(self.dimension)

@@ -13,7 +13,7 @@ DATASETS_DIR = Path(__file__).parent / "datasets"
 async def init_db():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
-    
+
     async with AsyncSessionLocal() as session:
         try:
             # 1. Create Default Admin User

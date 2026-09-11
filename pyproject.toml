@@ -1,0 +1,99 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legalai"
+version = "1.0.0"
+description = "High-performance, privacy-first legal intelligence platform for Indian Law (BNS, BNSS, BSA, IPC, CrPC, IEA, Constitution)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Kanak", email = "kanak@users.noreply.github.com"}
+]
+keywords = [
+    "legal-ai",
+    "bharatiya-nyaya-sanhita",
+    "bns-2023",
+    "fastapi",
+    "rag",
+    "legal-tech",
+    "india-law",
+    "nlp"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Legal Industry",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Application Frameworks"
+]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "pydantic>=2.6.4",
+    "pydantic-settings>=2.2.1",
+    "sqlalchemy>=2.0.28",
+    "aiosqlite>=0.20.0",
+    "email-validator>=2.0.0",
+    "bcrypt>=4.0.0",
+    "python-jose[cryptography]>=3.3.0",
+    "httpx>=0.27.0",
+    "requests>=2.31.0",
+    "psutil>=5.9.0",
+    "python-multipart>=0.0.9"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.1.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.3.0",
+    "mypy>=1.9.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["backend*", "ai_service*", "ocr_service*", "worker*"]
+exclude = ["backend.venv_packages*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = [
+    "backend/venv_packages",
+    "frontend",
+    "node_modules",
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    ".venv"
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E402", "E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = ["backend/venv_packages", "*.egg", ".git", ".tox", "build", "dist", "node_modules", "frontend"]
+pythonpath = [".", "backend"]
+
+[tool.coverage.run]
+source = ["backend/app", "ai_service/app"]
+omit = [
+    "backend/venv_packages/*",
+    "tests/*",
+    "frontend/*"
+]
+
+[tool.coverage.report]
+fail_under = 80
+show_missing = true

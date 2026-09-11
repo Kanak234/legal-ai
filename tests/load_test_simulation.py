@@ -15,7 +15,6 @@ sys.path.insert(0, str(ROOT_DIR / "backend"))
 sys.path.insert(0, str(ROOT_DIR / "ai_service"))
 
 from ai_service.app.core.rag_chain import rag_chain
-from data_pipeline.ingest_legal_data import run_ingestion_summary
 
 def run_load_stress_test(virtual_users: int = 50, duration_seconds: float = 2.0):
     print("=" * 65)

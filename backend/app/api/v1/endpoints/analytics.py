@@ -11,7 +11,7 @@ async def get_analytics_summary(db: AsyncSession = Depends(get_db)):
     j_res = await db.execute(select(Judgment))
     s_res = await db.execute(select(Section))
     a_res = await db.execute(select(Act))
-    
+
     judgments = j_res.scalars().all()
     sections = s_res.scalars().all()
     acts = a_res.scalars().all()

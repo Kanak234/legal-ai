@@ -8,15 +8,23 @@ on:
 
 jobs:
   guard:
+    name: Repository Integrity Guard
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Verify repository integrity
-      run: |
-        test -f README.md
-        test -f docker-compose.yml
-        test -f backend/run_local.py
-        test -f tests/security_audit.py
-        test -f tests/test_platform.py
-        echo "Integrity check passed."
+      - name: Verify repository structure and security files
+        run: |
+          test -f README.md
+          test -f SECURITY.md
+          test -f CHANGELOG.md
+          test -f pyproject.toml
+          test -f Dockerfile
+          test -f docker-compose.yml
+          test -f backend/Dockerfile
+          test -f backend/run_local.py
+          test -f tests/security_audit.py
+          test -f tests/test_platform.py
+          test -f .github/dependabot.yml
+          test -f .github/workflows/codeql.yml
+          echo "Repository integrity checks passed."

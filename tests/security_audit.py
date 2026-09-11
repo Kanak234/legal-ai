@@ -5,7 +5,6 @@ Scans project files for security compliance, SQL injection vulnerabilities, CORS
 """
 
 import sys
-import re
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).parent.parent
@@ -16,7 +15,7 @@ def run_security_audit():
     print("=" * 60)
 
     findings = []
-    
+
     # 1. Scan for SQL Injection Protection (Check asyncpg / SQLAlchemy parameterized query usage)
     backend_files = [f for f in (ROOT_DIR / "backend").rglob("*.py") if "venv_packages" not in str(f)]
     sql_injection_risk = False

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends
 import httpx
 import logging
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -23,7 +23,7 @@ PERSONA_PROMPTS = {
 async def process_rag_query(query_in: RAGQuery, db: AsyncSession = Depends(get_db)):
     persona = query_in.persona or "Advocate"
     persona_instruction = PERSONA_PROMPTS.get(persona, PERSONA_PROMPTS["Advocate"])
-    
+
     # Try calling dedicated AI microservice if available, or fallback gracefully with internal smart engine
     try:
         async with httpx.AsyncClient(timeout=10.0) as client:
@@ -49,7 +49,7 @@ async def process_rag_query(query_in: RAGQuery, db: AsyncSession = Depends(get_d
         "Scored dense embedding similarity & cross-encoder reranking.",
         "Applied anti-hallucination verification matrix."
     ]
-    
+
     if "murder" in query_text or "302" in query_text or "103" in query_text:
         answer = f"[{persona} Mode] Under the Bharatiya Nyaya Sanhita (BNS), 2023, punishment for murder is governed by **Section 103(1)** (corresponding to former IPC Section 302). It prescribes death penalty or life imprisonment along with mandatory fine.\n\n" \
                  f"**Procedural Note (BNSS 2023)**: Under Section 173 of BNSS, an FIR must be registered (including Zero FIR provisions). Electronic evidence must adhere to Section 61 of Bharatiya Sakshya Adhiniyam (BSA) 2023.\n\n" \

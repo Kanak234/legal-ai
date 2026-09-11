@@ -1,5 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException
-import logging
+from fastapi import FastAPI, UploadFile, File
 
 app = FastAPI(title="LegalAI OCR Service", version="1.0.0")
 
@@ -11,7 +10,7 @@ def health():
 async def extract_text(file: UploadFile = File(...)):
     content = await file.read()
     filename = file.filename
-    
+
     # Process text extraction
     text = f"Extracted Legal Document Text for {filename}:\n" \
            f"IN THE SUPREME COURT OF INDIA\n" \
